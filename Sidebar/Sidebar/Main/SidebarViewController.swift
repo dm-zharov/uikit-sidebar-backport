@@ -13,6 +13,10 @@ private enum Const {
         static let distribution: UIStackView.Distribution = .fill
         static let alignment: UIStackView.Alignment = .fill
     }
+    
+    enum Toolbar {
+        static let estimatedFrame: CGRect = CGRect(x: 0.0, y: 0.0, width: 100.0, height: 40.0)
+    }
 }
 
 @objc
@@ -66,17 +70,12 @@ final class SidebarViewController: UIViewController {
         return view
     }()
     
-    @objc weak var supplementaryView: UIView? {
-        didSet {
-            if let oldView = oldValue {
-                oldView.removeFromSuperview()
-                stackView.removeArrangedSubview(oldView)
-            }
-            if let view = supplementaryView {
-                stackView.addArrangedSubview(view)
-            }
-        }
-    }
+    private let toolbar: UIToolbar = {
+        let toolbar = UIToolbar(frame: Const.Toolbar.estimatedFrame)
+        toolbar.isHidden = true
+        
+        return toolbar
+    }()
     
     @available(iOS 13, *)
     private lazy var dataSource: UICollectionViewDiffableDataSource<SidebarSection, SidebarItem>? = nil
@@ -160,9 +159,7 @@ extension SidebarViewController {
         view.addSubview(stackView)
         
         stackView.addArrangedSubview(collectionView)
-        if let view = supplementaryView {
-            stackView.addArrangedSubview(view)
-        }
+        stackView.addArrangedSubview(toolbar)
     }
     
     private func setupConstraints() {
@@ -454,3 +451,22 @@ extension SidebarViewController {
         }
     }
 }
+
+// MARK: - Toolbar
+extension SidebarViewController {
+    override var toolbarItems: [UIBarButtonItem]? {
+        set {
+            self.toolbar.isHidden = toolbarItems?.isEmpty ?? true
+            self.toolbar.items = newValue
+        }
+        get {
+            self.toolbar.items
+        }
+    }
+    
+    override func setToolbarItems(_ toolbarItems: [UIBarButtonItem]?, animated: Bool) {
+        self.toolbar.isHidden = toolbarItems?.isEmpty ?? true
+        self.toolbar.setItems(toolbarItems, animated: animated)
+    }
+}
+

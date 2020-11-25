@@ -14,7 +14,6 @@
 		235E53142568671D001F1FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235E53132568671D001F1FC0 /* Assets.xcassets */; };
 		235E53172568671D001F1FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235E53152568671D001F1FC0 /* LaunchScreen.storyboard */; };
 		235E535325686832001F1FC0 /* SidebarViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E535125686832001F1FC0 /* SidebarViewControllerDelegate.swift */; };
-		235E535725686849001F1FC0 /* SidebarActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E535625686849001F1FC0 /* SidebarActivityView.swift */; };
 		235E536825686850001F1FC0 /* SidebarItemMacHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E535B25686850001F1FC0 /* SidebarItemMacHeaderCell.swift */; };
 		235E536925686850001F1FC0 /* SidebarItemMacListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E535C25686850001F1FC0 /* SidebarItemMacListCell.swift */; };
 		235E536A25686850001F1FC0 /* SidebarItemHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235E535D25686850001F1FC0 /* SidebarItemHeaderCell.swift */; };
@@ -44,7 +43,6 @@
 		235E53162568671D001F1FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		235E53182568671D001F1FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235E535125686832001F1FC0 /* SidebarViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarViewControllerDelegate.swift; sourceTree = "<group>"; };
-		235E535625686849001F1FC0 /* SidebarActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarActivityView.swift; sourceTree = "<group>"; };
 		235E535B25686850001F1FC0 /* SidebarItemMacHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarItemMacHeaderCell.swift; sourceTree = "<group>"; };
 		235E535C25686850001F1FC0 /* SidebarItemMacListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarItemMacListCell.swift; sourceTree = "<group>"; };
 		235E535D25686850001F1FC0 /* SidebarItemHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarItemHeaderCell.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				235E535925686850001F1FC0 /* List */,
 				235E537E25686AA1001F1FC0 /* SidebarConstants.swift */,
 				23777E2425694F2E00021160 /* SidebarViewController.swift */,
-				235E535625686849001F1FC0 /* SidebarActivityView.swift */,
 				235E535125686832001F1FC0 /* SidebarViewControllerDelegate.swift */,
 				235E538A25686DF5001F1FC0 /* Backward compatibility */,
 			);
@@ -271,7 +268,6 @@
 				235E538225686AD1001F1FC0 /* MacCatalyst.swift in Sources */,
 				235E530D2568671C001F1FC0 /* SceneDelegate.swift in Sources */,
 				235E536E25686850001F1FC0 /* SidebarItemPadListCell.swift in Sources */,
-				235E535725686849001F1FC0 /* SidebarActivityView.swift in Sources */,
 				235E536825686850001F1FC0 /* SidebarItemMacHeaderCell.swift in Sources */,
 				235E536C25686850001F1FC0 /* SidebarItemPhoneHeaderCell.swift in Sources */,
 			);
