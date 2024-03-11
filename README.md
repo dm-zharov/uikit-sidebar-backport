@@ -2,7 +2,8 @@
 
 #### Requirements
 
-* iOS 12.0+ / macCatalyst 13.0+
+* iOS 12.0+
+* macCatalyst 13.0+
 
 <p float="left">
     <img src="https://github.com/dm-zharov/sidebar-ios/blob/main/macOS.png" width="600">
